@@ -1,0 +1,32 @@
+Algoritmo ejTresBucle
+	
+	Definir altura, i, j, k Como Entero
+	
+	Escribir "Ingrese un Numero Entero Positivo"
+	Leer altura
+	
+	Mientras altura <= 0 Hacer
+		Escribir "Por favor, Ingrese un Numero Entero positivo"
+		Leer altura
+	FinMientras
+	
+	j = 0
+	Para i <- altura Hasta j Con Paso -1 Hacer
+		si i > 0 Entonces
+		Para k <- 1 Hasta i Hacer
+			Escribir "*" Sin Saltar 
+		FinPara
+		Escribir ""
+		finsi
+	FinPara
+	
+FinAlgoritmo
+
+////Escriba un programa que lea un número entero (altura) y a partir de él cree una escalera
+////invertida de asteriscos con esa altura. Por ejemplo, si ingresamos una altura de 5 se
+////deberá mostrar:
+////*****
+////****
+////***
+////**
+////*

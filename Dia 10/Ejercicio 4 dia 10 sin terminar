@@ -1,0 +1,40 @@
+Algoritmo ejCuatroBucle
+	
+	Definir a, b, c , num, i, j, k, l, m, n Como Entero
+	Definir x, v, z Como Entero
+	n = 0
+	Escribir "ingrese un numero positivo"
+	Leer num 
+	
+	Mientras num <= 0 Hacer
+		Escribir "Por favor, Ingrese un Numero Entero positivo"
+		Leer num
+	FinMientras
+	j = 0
+	l = 1
+	Para i <- 1 hasta num Hacer
+		j = j + 1
+		k = j 
+		l = k * l
+		Escribir "!" i " = " l
+	FinPara
+	para b<-1 hasta num
+		Para a<-1 Hasta b Con Paso 1 Hacer
+			si a <> b
+				Escribir Sin Saltar  a "*"
+			SiNo
+				Escribir b "="
+			FinSi
+		Fin Para
+	FinPara
+	
+FinAlgoritmo
+////La función factorial se aplica a números enteros positivos. El factorial de un número entero
+////positivo (!n) es igual al producto de los enteros positivos desde 1 hasta n:
+////	n! = 1 * 2 * 3 * 4 * 5 * (n-1) * n
+////	Escriba un programa que calcule las factoriales de todos los números enteros desde el 1
+////hasta el 5. El programa deberá mostrar la siguiente salida:
+////	!1 = 1
+////	!2 = 1*2 = 2
+////	...
+////	!5 = 1*2*3*4*5 = 120
